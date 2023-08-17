@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container-todolist {
+  margin: 0 auto;
+  width: 400px;
+  background-color: rgb(201, 123, 136);
+  box-shadow: -15px -15px #f5eaea;
+  padding: 30px 50px 20px 50px;
+  color: #fff;
+}
+ul {
+  list-style-type: none;
+  padding: 0 40px 0 0;
+}
+h1 {
+  margin-bottom: 0;
+}
+.container-todolist :nth-child(1),
+:nth-child(2) {
+  letter-spacing: 1px;
+}
+.container-todolist ul li {
+  margin-top: 10px;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ddb1b1;
+}
+.checkComplete {
+  margin-top: 19px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.checkComplete button input {
+  margin: 0;
+  color: #fff;
+}
+.checkComplete button {
+  background-color: transparent;
+  border: none;
+}
+.addToDoList p {
+  margin-bottom: 0px;
+}
+.addToDoList button {
+  border: 1px solid #f9cccc;
+  background-color: transparent;
+  color: #fff;
+  width: 40px;
+  height: 25px;
+}
+.addToDoList input {
+  height: 22px;
+  margin-right: 2px;
+  border: 1px solid #eee;
 }
